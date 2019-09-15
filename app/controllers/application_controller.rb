@@ -47,15 +47,6 @@ class ApplicationController < Sinatra::Base
     redirect to '/recipes/'+recipe.id.to_s
   end
 
-  # delete '/recipes/:id/delete' do
-  #   if (@recipe = Recipe.find_by(id: params[:id]))
-  #     @recipe.delete
-  #     redirect '/recipes'
-  #   else
-  #     redirect '/failure'
-  #   end
-  # end
-
   delete '/recipes/:id' do #delete action
     @recipe = Recipe.find_by_id(params[:id])
     @recipe.delete
