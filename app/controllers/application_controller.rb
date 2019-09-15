@@ -6,4 +6,9 @@ class ApplicationController < Sinatra::Base
 
   # code actions here!
 
+  get '/' do
+
+    redirect to '/recipes'
+  end
+
 end
