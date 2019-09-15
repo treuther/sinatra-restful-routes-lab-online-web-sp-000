@@ -1,8 +1,14 @@
-<h1>Create a New Recipe</h1>
+<h1>Enter the recipe below</h1>
 
-<form method="POST" action="/recipes">
-  <label for="name"></label>Recipe Name: <input type="text" name="name"> <br> <br>
-  <label for="ingredients"></label>Ingredients: <input type="text" name="ingredients"> <br> <br>
-  <label for="cook_time"></label>Cook Time: <input type="text" name="cook_time"> <br> <br>
-  <input type="submit" value="Save">
+<p>   <form method="POST" action="/recipes">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name"></p>
+
+ <p>  <label for="ingredients">Ingredients</label>
+  <input type="text" id="ingredients" name="ingredients"></p>
+
+ <p>  <label for="cook_time">Cook Time</label>
+  <input type="text" id="cook_time" name="cook_time"></p>
+
+   <input type="submit" value="submit">
 </form>
